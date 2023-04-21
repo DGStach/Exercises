@@ -1,0 +1,34 @@
+//ASYNCHRONICZNOŚĆ WAIT 
+{
+
+setTimeout(()=>{
+    console.log('cl1');
+  },2000);
+
+{ setTimeout(()=>{
+    console.log('cl2');
+    wait(5000, 'wait cl2');
+  },1000);
+wait(2000, 'wait1');
+}
+wait(2000, 'wait2');
+}
+wait(2000, 'wait3');
+
+// kolejny przyklad set time out 
+
+{
+
+setTimeout(()=>{
+    console.log('cl1');
+  },2000);
+
+{ setTimeout(()=>{
+    console.log('cl2');
+    wait(5000, 'wait cl2');
+  },1000);
+wait(2000, 'wait1');
+}
+wait(2000, 'wait2');
+}
+wait(2000, 'wait3');
