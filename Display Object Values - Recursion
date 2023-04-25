@@ -1,0 +1,24 @@
+// Display all string values from object by using recursion. 
+
+o = {
+    name: 'Daga',
+    surname: 'Stach', 
+    age: 23, 
+    zainteresowania: {
+        sport: 'tenis',
+        ksiązki: 'fantastyka', 
+    }
+}; 
+
+function DisplayEntreis(o){
+for (const [key, value] of Object.entries(o)) {
+    if (typeof(value) === 'object'){
+        DisplayEntreis(value); 
+        continue;
+    }
+    if (typeof(value) === 'string'){
+  console.log(`${key}: ${value}`);
+    }
+}
+};
+DisplayEntreis(o)
