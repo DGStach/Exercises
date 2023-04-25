@@ -1,0 +1,13 @@
+const Fi = function(n){
+if (n<2){
+    return
+}
+    if ((2*n-3)<nmax){
+        console.log("2n-3", 2*n-3)
+    }
+    n = n-1; 
+    Fi(n)
+}
+let n = 10 // function Fi console log all fibonuci number from n - number to 1; 
+let nmax = n 
+Fi(n)
