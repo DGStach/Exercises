@@ -1,0 +1,25 @@
+
+import React from "react";
+
+function App() {
+    
+  return (
+    <div className="App">
+        <div style={{display: "flex", marginLeft: "20px"}}>
+            <form encType="multipart/form-data" action="/upload/image" method="post">
+                <input id="image-file" type="file" onChange={(event)=>{
+                    if (event.target.files[0]) {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                    const imageBuffer = e.target.result;
+                    console.log(imageBuffer)
+                };
+
+                    reader.readAsDataURL(event.target.files[0]);
+                }}}
+                    />
+            </form>
+        </div>
+    </div>
+  );
+}
