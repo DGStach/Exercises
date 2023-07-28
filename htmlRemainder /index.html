@@ -1,24 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<style>
-    button{
-        width: 370px;
-        height: 100px;
-    }
-    div{
-        height: 600px;
-        display: block;
-        margin: auto;
-    /*    justify-content: center;
-        align-items: center;*/
-    }
+<html>
 
-</style>
-<body>
-<a style = "text-decoration: none" href="https://www.facebook.com/" target="_self"> MÓJ LINK </a>
+<body style="padding-top:50px">
+<h3 id="event">0</h3>
+<input type="button" onclick="myFunction()" value="Click Me" />
+<input type="reset" onclick="reset()" value="Reset" />
 </body>
+
+<script>
+    function myFunction() {
+        var value = document.getElementById("event_demo").innerHTML
+        value = parseInt(value) + 1;
+        document.getElementById("event_demo").innerHTML = value;
+    }
+    function reset() {
+        document.getElementById("event_demo").innerHTML = 0;
+    }
+</script>
 </html>
