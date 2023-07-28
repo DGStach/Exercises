@@ -1,13 +1,95 @@
 <!DOCTYPE html>
 <html>
 
-<body style="padding-top:50px">
-<h3 id="event_demo">0</h3>
-<input type="button" onclick="myFunction()" value="Click Me" />
-<input type="reset" value="Reset" />
+<style>
+    .btn {
+        border: solid 1px grey;
+        padding: 3px;
+        font-family: sans-serif, Arial;
+        color: darkseagreen;
+    }
 
+    .btn-small {
+    }
+
+    .btn-large {
+    }
+
+    .btn-big {
+    }
+
+    .btn_cancel {
+    }
+
+    .header-position {
+        margin: 0;
+        width: 100vw;
+        display: inline-flex;
+    }
+    .header-view {
+        background-color: rgba(134,134,134,0.3);
+        color: rgba(0,90,90,0.8);
+
+    }
+    .link{
+        cursor: pointer;
+        text-decoration: none;
+        color: rgb(125,125,125);
+    }
+
+    .nav-topContainer{
+        float: right;
+    }
+
+    .content {
+        max-width: 1200px;
+    }
+    .form{
+        display: inline-grid;
+        grid-template-columns: 300px ;
+    }
+    .form-input{
+        padding: 2px;
+        margin: 5px;
+        border-radius: 4px;
+        border: solid 2px rgba(125,90,90,0.6);
+    }
+
+</style>
 <body>
-<canvas width="300" height="300" style="border:2px solid;"></canvas>
+
+<header class="content">
+    <div class="header-view header-position">
+        <logo>Piękne Logo</logo>
+        <nav class="nav-topContainer">
+            <a class="link" href="">Home</a>
+            <a class="link" href="">About us</a>
+            <a class="link" href="">Menu</a>
+            <a class="link" href="">Contact</a>
+        </nav>
+    </div>
+
+</header>
+
+<section>
+    <form class="form">
+        <input class=" form-input" type="text" placeholder="Name"/>
+        <input class="form-input" type="number" placeholder="phone Number">
+        <input class="form-input" type="email" placeholder="Email address">
+        <div>
+            <button type="submit">SEND</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</section>
+
+<footer>
+    <nav>
+        <a  class="link" href="https://itporady.pl/html-css/rozmiary-w-css-wzgledem-obszaru-roboczego-czyli-vw-vh-vmax-i-vmin">Facebook</a>|
+        <a class="link" href="https://itporady.pl/html-css/rozmiary-w-css-wzgledem-obszaru-roboczego-czyli-vw-vh-vmax-i-vmin">Instagram</a>|
+        <a  class="link" href="https://itporady.pl/html-css/rozmiary-w-css-wzgledem-obszaru-roboczego-czyli-vw-vh-vmax-i-vmin">Pinterest</a>|
+    </nav>
+</footer>
 </body>
 </body>
 </html>
