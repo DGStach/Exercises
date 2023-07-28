@@ -4,7 +4,7 @@
 <body style="padding-top:50px">
 <h3 id="event_demo">0</h3>
 <input type="button" onclick="myFunction()" value="Click Me" />
-<input type="reset" onclick="reset()" value="Reset" />
+<input type="reset" value="Reset" />
 </body>
 
 <script>
@@ -13,8 +13,11 @@
         value = parseInt(value) + 1;
         document.getElementById("event_demo").innerHTML = value;
     }
+    document.getElementById("event_demo").addEventListener('click', reset)
+
     function reset() {
         document.getElementById("event_demo").innerHTML = 0;
     }
+
 </script>
 </html>
